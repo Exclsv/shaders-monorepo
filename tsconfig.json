@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "declaration": true,
+    "noEmit": false,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [],
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    {
+      "path": "./@apps/04-shaders/32-coffee-smoke"
+    },
+    {
+      "path": "./@apps/04-shaders/33-hologram-shader"
+    }
+  ]
+}

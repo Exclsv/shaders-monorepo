@@ -1,0 +1,82 @@
+{
+  "name": "monorepo-setup",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "shaders:dev": "pnpm --filter @app/27-shaders dev",
+    "shaders:build": "pnpm --filter @app/27-shaders build",
+    
+    "shader-patterns:dev": "pnpm --filter @app/28-shader-patterns dev",
+    "shader-patterns:build": "pnpm --filter @app/28-shader-patterns build",
+
+    "raging-sea:dev": "pnpm --filter @app/29-raging-sea dev",
+    "raging-sea:build": "pnpm --filter @app/29-raging-sea build",
+
+    "animated-galaxy:dev": "pnpm --filter @app/30-animated-galaxy dev",
+    "animated-galaxy:build": "pnpm --filter @app/30-animated-galaxy build",
+
+    "modified-materials:dev": "pnpm --filter @app/31-modified-materials dev",
+    "modified-materials:build": "pnpm --filter @app/31-modified-materials build",
+
+    "coffee-smoke:dev": "pnpm --filter @app/32-coffee-smoke dev",
+    "coffee-smoke:build": "pnpm --filter @app/32-coffee-smoke build",
+
+    "hologram:dev": "pnpm --filter @app/33-hologram dev",
+    "hologram:build": "pnpm --filter @app/33-hologram build",
+
+    "firework:dev": "pnpm --filter @app/34-firework dev",
+    "firework:build": "pnpm --filter @app/34-firework build",
+
+    "light-shading:dev": "pnpm --filter @app/35-light-shading dev",
+    "light-shading:build": "pnpm --filter @app/35-light-shading build",
+
+    "raging-sea-shading:dev": "pnpm --filter @app/36-raging-sea-shading dev",
+    "raging-sea-shading:build": "pnpm --filter @app/36-raging-sea-shading build",
+
+    "halftone-shading:dev": "pnpm --filter @app/37-halftone-shading dev",
+    "halftone-shading:build": "pnpm --filter @app/37-halftone-shading build",
+
+    "earth-shader:dev": "pnpm --filter @app/38-earth-shader dev",
+    "earth-shader:build": "pnpm --filter @app/38-earth-shader build",
+
+    "particles-cursor-anim:dev": "pnpm --filter @app/39-particles-cursor-animation dev",
+    "particles-cursor-anim:build": "pnpm --filter @app/39-particles-cursor-animation build",
+
+    "particles-morphing:dev": "pnpm --filter @app/40-particles-morphing dev",
+    "particles-morphing:build": "pnpm --filter @app/40-particles-morphing build",
+
+    "gpgpu:dev": "pnpm --filter @app/41-gpgpu-flow-field dev",
+    "gpgpu:build": "pnpm --filter @app/41-gpgpu-flow-field build",
+    "gpgpu:preview": "pnpm --filter @app/41-gpgpu-flow-field preview",
+
+    "wobbly-sphere:dev": "pnpm --filter @app/42-wobbly-sphere dev",
+    "wobbly-sphere:build": "pnpm --filter @app/42-wobbly-sphere build",
+
+    "sliced-model:dev": "pnpm --filter @app/43-sliced-model dev",
+    "sliced-model:build": "pnpm --filter @app/43-sliced-model build",
+
+    "procedural-terrain:dev": "pnpm --filter @app/44-procedural-terrain dev",
+    "procedural-terrain:build": "pnpm --filter @app/44-procedural-terrain build",
+
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/three": "^0.169.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-glsl": "^1.3.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lil-gui": "^0.20.0",
+    "three": "^0.170.0",
+    "three-bvh-csg": "^0.0.16",
+    "three-custom-shader-material": "^6.1.1"
+  }
+}
